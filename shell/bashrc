@@ -1,0 +1,2 @@
+# Load secrets (API keys, etc)
+[ -f ~/.secrets ] && source ~/.secrets

@@ -1,0 +1,19 @@
+export PATH="/usr/local/Cellar/node/25.4.0/bin:$HOME/.bun/bin:~/.npm-global/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+export ANTHROPIC_MODEL=claude-opus-4-5-20251101
+
+# Claude Code: load CLAUDE.md from additional directories
+export CLAUDE_CODE_ADDITIONAL_DIRECTORIES_CLAUDE_MD=1
+alias claude='claude --add-dir ~/Code/nvsio/dotfiles'
+
+# Load secrets (API keys, etc)
+[ -f ~/.secrets ] && source ~/.secrets
+
+# Fix Node.js TLS certificate verification
+export NODE_EXTRA_CA_CERTS=~/.clawdbot/ca-certificates.pem
+
+# bun completions
+[ -s "/Users/nvs/.bun/_bun" ] && source "/Users/nvs/.bun/_bun"
+
+# opencode
+export PATH=/Users/nvs/.opencode/bin:$PATH

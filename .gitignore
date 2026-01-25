@@ -1,0 +1,26 @@
+# Private files (prefixed with --)
+--*
+/CLAUDE.md
+
+# Local overrides
+*.local
+*.local.*
+
+# Secrets folder and files
+secrets/
+.env
+.env.*
+credentials*
+*.key
+*.pem
+id_rsa*
+*.secret
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
